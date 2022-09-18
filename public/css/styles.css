@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+}
+:root {
+    --site-red: #b51b1b;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+a,
+span {
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-size: 34px;
+    color: var(--site-red);
+}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    margin: 0;
+    list-style: none;
+}
+.router-link-exact-active {
+    font-weight: 600 !important;
+    color: var(--site-red) !important;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.back-link {
+    color: #888;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 15px 0;
+    gap: 20px;
+}
+.card img {
+    border-radius: 6px;
+}
+.card h4 {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 4px 7px 7px 7px;
+}
+.card:hover,
+.home-review-card:hover,
+.news-article:hover {
+    transform: rotate(1deg);
+    transition: 0.3s ease;
+}
+.home-review-card img {
+    border-radius: 5px;
+}
+.home-review-card  {
+    font-weight: 500;
+    padding: 7px 0;
+}
+.video {
+    margin: 35px auto;
+    width: 75%;
+    display: block;
+    height: 450px;
+}
+.mobile-nav-links li a {
+    color: #fff;
+}
+.mobile-site-nav {
+    display: none;
+}
+@media (max-width: 700px) {
+.site-nav {
+    display: none;
+}
+.menu-line {
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    z-index: 100;
+    margin-bottom: 5px;
+}
+.mobile-hamburger-menu {
+    position: absolute;
+    right: 16px;
+    top: 14px;
+    width: 34px;
+    z-index: 1000000;
+}
+.mobile-site-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 90%;
+    background: #000;
+    z-index: 99999;
+}
+.mobile-nav-links {
+    margin-top: 75px;
+    padding-left: 15px;
+}
+.mobile-nav-links li {
+    display: block;
+    font-size: 16px;
+    width: 95%;
+    padding: 10px 0;
+    border-bottom: 1px dotted #eee;
+}
+@keyframes navOpen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.show {
+    animation-name: navOpen;
+    animation-duration: 0.4s;
+    display: block;
+}
+.rotate-top,
+.rotate-middle {
+    transition: 0.4s ease;
+    top: 10px;
+    position: absolute;
+}
+.rotate-top {
+    transform: rotate(45deg);
+}
+.rotate-middle {
+    transform: rotate(-45deg);
+}
+.hide-bottom {
+    visibility: hidden;  
+}
+.video {
+    width: 90%;
+    height: 190px;
+    margin: 10px auto;
+}
+.cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.card h4 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 4px 7px 7px 7px;
+}
+}
